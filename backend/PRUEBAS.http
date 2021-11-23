@@ -1,0 +1,27 @@
+@url= http://localhost:5000
+
+### obtener todos los usuario
+GET {{url}}/api/users/
+
+####crear usuario
+POST {{url}}/api/users/
+Content-Type: application/json
+
+{
+   
+    "username": "smassa",
+    "password": "contraseña"   
+}
+
+###eliminar un usuario
+DELETE {{url}}/api/users/619955b33fdd979b04dcd31f
+
+
+#### actualizar un usuario
+PUT {{url}}/api/users/619956d3254a2c84f4a93c13
+Content-Type: application/json
+
+{
+    "username": "nuevo",
+    "password": "contraseñaNUEVA"   
+}
